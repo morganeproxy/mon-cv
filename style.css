@@ -1,4 +1,86 @@
-h1,h2
-{
+body{
+    font-family: arial,sans-serif;
+}
+/*BLOCK GAUCHE----------------------------------------------*/
+aside{
+  background-color: #FBC02D;
+  font-size: 14px;
+  width: 30%;
+}
+
+img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border-radius: solid 5px;
+  display: block;
+  margin: auto;
+ }
+
+aside h3{
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #424242;
+  padding: 5px;
+  color: #FBC02D;
+  text-align: center;
+}
+
+aside p{
+  margin: 25px;
+  text-align: justify;
+}
+
+/*CA COINCE !-----------------------------*/
+.icon-hobby{
+  display: inline-block;
+  padding: 10px;
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+
+/*BLOCK DROIT----------------------------------------------*/
+section{
+  width: 70%;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h3{
+  border-bottom: solid 2px #FBC02D;
+}
+
+strong{
+  color: #FBC02D;
+}
+
+span{
+  border-bottom: solid 2px #FBC02D;
+}
+
+.icon-title{
+  color:#FBC02D;
+}
+
+.puce-date{
+  color:#FBC02D;
 }
