@@ -1,18 +1,22 @@
 body{
     font-family: arial,sans-serif;
+    margin: 0;
+    background-color: black;
 }
 
 #bloc_page{
-
+margin-left: auto;
+margin-right: auto;
+width: 1000px;
 }
 /*BLOCK GAUCHE----------------------------------------------*/
 aside{
   background-color: #FBC02D;
   font-size: 14px;
   float: left;
-  width: 20%;
+  width: 25%;
   position: relative;
-  height: 1500px; /*à ajuster selon longueur finale bloc droit*/
+  height: 1430px; /*à ajuster selon longueur finale bloc droit*/
 }
 
 #last-div{
@@ -20,6 +24,7 @@ position: absolute;
 bottom: 15px;
 left: 0;
 right: 0;
+border: solid 1px red;
 }
 
 img{
@@ -27,8 +32,11 @@ img{
   width: 150px;
   border-radius: 150px;
   border-radius: solid 5px;
+  border: 2px solid #424242;
   display: block;
   margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
  }
 
 aside h3{
@@ -45,6 +53,7 @@ aside h3{
 aside p{
   margin: 25px;
   text-align: justify;
+  border: solid 1px black;
 }
 
 .icon-hobby{
@@ -58,10 +67,9 @@ aside p{
   .element{
     color: #424242;
     border: solid 1px #424242;
-    border-radius: 50px;
+    border-radius: 200px;
     padding: 10px;
-    weight: 50px;
-    height: 40px;
+    font-size: 210%
   }
 
 a{
@@ -78,7 +86,8 @@ a:hover{
 /*BLOCK DROIT----------------------------------------------*/
 section{
   float: right;
-  width: 80%;
+  width: 75%;
+  background-color: white;
 }
 
 header{
@@ -92,17 +101,24 @@ main{
 h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
+  border: solid 1px pink;
 }
 
 h2{
   font-size: 18px;
   font-weight: normal;
+  border: solid 1px orange;
 }
 
 h3{
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-left: 130px;
+}
+
+.title-full{
   border-bottom: solid 2px #FBC02D;
-    border: solid 1px green;
+  border: solid 1px green;
 }
 
 h4{
@@ -125,14 +141,14 @@ span{
 
 .block-date{
   float: left;
-  width: 20%;
-  margin-left: 70px;
   border: solid 1px red;
+  margin-left: 40px;
+  width: 190px;
 }
 
 .block-text{
   float: right;
-  width: 70%;
+  width: 60%;
   border: solid 1px blue;
 }
 
@@ -142,19 +158,31 @@ span{
   font-size: 150%;
 }
 
+
 .puce-date{
   color:#FBC02D;
   float: left;
   font-size: 70%;
 }
+
+.date{
+  float: right;
+}
+
 .icon-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
   color:#FBC02D;
   float: left;
   font-size: 150%;
+  border: solid 1px grey;
 }
 
 .puce-date{
   color:#FBC02D;
   float: left;
   font-size: 70%;
+  border: solid 1px grey;
 }
