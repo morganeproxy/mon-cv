@@ -10,7 +10,16 @@ aside{
   background-color: #FBC02D;
   font-size: 14px;
   float: left;
-  width: 30%;
+  width: 20%;
+  position: relative;
+  height: 1500px; /*à ajuster selon longueur finale bloc droit*/
+}
+
+#last-div{
+position: absolute;
+bottom: 15px;
+left: 0;
+right: 0;
 }
 
 img{
@@ -47,7 +56,8 @@ aside p{
   }
 
   .element{
-    border: solid 1px black;
+    color: #424242;
+    border: solid 1px #424242;
     border-radius: 50px;
     padding: 10px;
     weight: 50px;
@@ -68,11 +78,15 @@ a:hover{
 /*BLOCK DROIT----------------------------------------------*/
 section{
   float: right;
-  width: 70%;
+  width: 80%;
 }
 
 header{
-  margin: 30px;
+  margin: 40px;
+}
+
+main{
+  margin: 20px;
 }
 
 h1{
@@ -86,7 +100,14 @@ h2{
 }
 
 h3{
+  font-family: 'Montserrat', sans-serif;
   border-bottom: solid 2px #FBC02D;
+    border: solid 1px green;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 strong{
@@ -97,10 +118,43 @@ span{
   border-bottom: solid 2px #FBC02D;
 }
 
+.cat-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.block-date{
+  float: left;
+  width: 20%;
+  margin-left: 70px;
+  border: solid 1px red;
+}
+
+.block-text{
+  float: right;
+  width: 70%;
+  border: solid 1px blue;
+}
+
 .icon-title{
   color:#FBC02D;
+  float: left;
+  font-size: 150%;
 }
 
 .puce-date{
   color:#FBC02D;
+  float: left;
+  font-size: 70%;
+}
+.icon-title{
+  color:#FBC02D;
+  float: left;
+  font-size: 150%;
+}
+
+.puce-date{
+  color:#FBC02D;
+  float: left;
+  font-size: 70%;
 }
