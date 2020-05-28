@@ -1,0 +1,185 @@
+*{
+  border: 1px solid black;
+}
+/*-------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px){
+/*Définir règles responsive!!!*/
+}
+
+body{
+    font-family: arial,sans-serif;
+    margin: 0;
+    background-color: #424242;
+    font-size: 13px;
+}
+
+#bloc_page{
+margin: auto;
+width: 1000px;
+height: 1300px;/*à réajuster!!!*/
+}
+/*BLOCK GAUCHE----------------------------------------------*/
+aside{
+  background-color: #FBC02D;
+  float: left;
+  width: 25%;
+  position: relative;
+  height: 1300px; /*à ajuster selon longueur finale bloc droit*/
+}
+
+.block-left{
+  /*Coller contenu (titre) à la div ?*/
+}
+
+#block-loisirs{
+position: absolute;
+bottom: 20px;
+left: 0;
+right: 0;
+}
+
+.icon-hobby{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  }
+
+  .element{
+    color: #424242;
+    border: 1px solid #424242;
+    border-radius: 200px;
+    padding: 10px;
+    font-size: 180%
+  }
+
+img{
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  border-radius: 5px solid;
+  border: 2px solid #424242;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+ }
+
+aside h3{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #424242;
+  padding: 5px;
+  color: #FBC02D;
+  text-align: center;
+}
+
+aside p{
+  margin: 25px;
+  text-align: justify;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+
+/*BLOCK DROIT----------------------------------------------*/
+section{
+  float: right;
+  width: 74%; /*Redéfinir la bonne dimension après effacement des bordures*/
+  background-color: white;
+  height: 1300px;/*à réajuster!!!*/
+}
+/*Header-------------------------------------*/
+header{
+  margin: 20px;
+}
+
+strong{
+  color: #FBC02D;
+}
+
+.yellow-line{
+  border-bottom: 2px solid #FBC02D;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: normal;
+}
+/*Main + Articles-------------------------------------*/
+main{
+  margin: 20px;
+}
+
+.block-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  color:#FBC02D;
+  float: left;
+  font-size: 150%;
+}
+
+.block-right h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-left: 130px;
+  border-bottom: 2px solid #FBC02D;
+}
+
+/*Block date droit---------*/
+.block-date{
+  float: left;
+  margin-left: 20px;
+  width: 190px;
+}
+
+.puce-date{
+  color:#FBC02D;
+  float: left;
+  font-size: 70%;
+}
+
+.date{
+  float: right;
+}
+/*Block texte gauche---------*/
+.block-text{
+  float: right;
+  width: 60%;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+/*Block Recommandation---------*/
+h6{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
