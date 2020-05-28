@@ -1,37 +1,67 @@
+*{
+  border: 1px solid black;
+}
+/*-------------------------------------------------------------*/
+
+@media screen and (max-width: 1280px){
+/*Définir règles responsive!!!*/
+}
+
 body{
     font-family: arial,sans-serif;
     margin: 0;
-    background-color: black;
+    background-color: #424242;
+    font-size: 13px;
 }
 
 #bloc_page{
-margin-left: auto;
-margin-right: auto;
+margin: auto;
 width: 1000px;
+height: 1300px;/*à réajuster!!!*/
 }
 /*BLOCK GAUCHE----------------------------------------------*/
 aside{
   background-color: #FBC02D;
-  font-size: 14px;
   float: left;
   width: 25%;
   position: relative;
-  height: 1430px; /*à ajuster selon longueur finale bloc droit*/
+  height: 1300px; /*à ajuster selon longueur finale bloc droit*/
 }
 
-#last-div{
+.block-left{
+  /*Coller contenu (titre) à la div ?*/
+}
+
+#block-loisirs{
 position: absolute;
-bottom: 15px;
+bottom: 20px;
 left: 0;
 right: 0;
-border: solid 1px red;
 }
+
+.icon-hobby{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  }
+
+  .element{
+    color: #424242;
+    border: 1px solid #424242;
+    border-radius: 200px;
+    padding: 10px;
+    font-size: 180%
+  }
 
 img{
   height: 150px;
   width: 150px;
   border-radius: 150px;
-  border-radius: solid 5px;
+  border-radius: 5px solid;
   border: 2px solid #424242;
   display: block;
   margin: auto;
@@ -53,27 +83,9 @@ aside h3{
 aside p{
   margin: 25px;
   text-align: justify;
-  border: solid 1px black;
 }
 
-.icon-hobby{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px;
-  }
-
-  .element{
-    color: #424242;
-    border: solid 1px #424242;
-    border-radius: 200px;
-    padding: 10px;
-    font-size: 210%
-  }
-
 a{
-  text-decoration: none;
   color: black;
 }
 
@@ -86,87 +98,40 @@ a:hover{
 /*BLOCK DROIT----------------------------------------------*/
 section{
   float: right;
-  width: 75%;
+  width: 74%; /*Redéfinir la bonne dimension après effacement des bordures*/
   background-color: white;
+  height: 1300px;/*à réajuster!!!*/
 }
-
+/*Header-------------------------------------*/
 header{
-  margin: 40px;
-}
-
-main{
   margin: 20px;
-}
-
-h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  border: solid 1px pink;
-}
-
-h2{
-  font-size: 18px;
-  font-weight: normal;
-  border: solid 1px orange;
-}
-
-h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  padding-left: 130px;
-}
-
-.title-full{
-  border-bottom: solid 2px #FBC02D;
-  border: solid 1px green;
-}
-
-h4{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
 strong{
   color: #FBC02D;
 }
 
-span{
-  border-bottom: solid 2px #FBC02D;
+.yellow-line{
+  border-bottom: 2px solid #FBC02D;
 }
 
-.cat-right{
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: normal;
+}
+/*Main + Articles-------------------------------------*/
+main{
+  margin: 20px;
+}
+
+.block-right{
   display: flex;
   flex-direction: column;
-}
-
-.block-date{
-  float: left;
-  border: solid 1px red;
-  margin-left: 40px;
-  width: 190px;
-}
-
-.block-text{
-  float: right;
-  width: 60%;
-  border: solid 1px blue;
-}
-
-.icon-title{
-  color:#FBC02D;
-  float: left;
-  font-size: 150%;
-}
-
-
-.puce-date{
-  color:#FBC02D;
-  float: left;
-  font-size: 70%;
-}
-
-.date{
-  float: right;
 }
 
 .icon-title{
@@ -177,12 +142,44 @@ span{
   color:#FBC02D;
   float: left;
   font-size: 150%;
-  border: solid 1px grey;
+}
+
+.block-right h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding-left: 130px;
+  border-bottom: 2px solid #FBC02D;
+}
+
+/*Block date droit---------*/
+.block-date{
+  float: left;
+  margin-left: 20px;
+  width: 190px;
 }
 
 .puce-date{
   color:#FBC02D;
   float: left;
   font-size: 70%;
-  border: solid 1px grey;
+}
+
+.date{
+  float: right;
+}
+/*Block texte gauche---------*/
+.block-text{
+  float: right;
+  width: 60%;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+/*Block Recommandation---------*/
+h6{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
 }
