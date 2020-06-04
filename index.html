@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/fontawesome.min.css">
     <title>CV Morgane Proxy</title>
   </head>
   <body>
-    <div id="bloc_page">
+    <div id="bloc-page">
 <!--BLOCK-GAUCHE / ASIDE--------------------------------------->
       <aside>
         <img src="img/avatar.jpg" alt="ma-photo" class="ma-photo">
 <!--Contact----------------------------->
-        <div class="block-left">
+        <section class="block-left">
           <h3>Contact</h3>
           <p>Adresse<br>
             Paris, France</p>
@@ -27,9 +28,9 @@
           <p>Portfolio<br>
           <a href="https://morganelfe.carbonmade.com/" target="_blank">Morganelfe Art</a>
           </p>
-        </div>
+        </section>
 <!--A propos----------------------------->
-        <div class="block-left">
+        <section class="block-left">
           <h3>À propos de moi</h3>
           <p>Polyvalente, je suis avant tout une communicante avec un grand C !
             J'aime créer, fédérer une communauté, transmettre des émotions, faire rêver,
@@ -38,9 +39,11 @@
           <p>
             Je vous propose mon expértise dans les domaines de la rédaction web SEO, du graphisme et du développement web.
           </p>
-        </div>
+          <p>N'hésitez pas à me contacter pour toute demande de projet ou information complémentaire.
+          </p>
+        </section>
 <!--Loisirs----------------------------->
-        <div id="block-loisirs">
+        <section id="block-loisirs">
           <div class="block-left">
             <h3>Loisirs</h3>
               <div class="icon-hobby">
@@ -49,19 +52,19 @@
                 <div class="element"><i class="fas fa-camera-retro"></i></div>
               </div>
             </div>
-          </div>
+          </saction>
       </aside>
-<!--BLOCK DROIT / SECTION--------------------------------------->
-      <section>
+<!--BLOCK DROIT / MAIN--------------------------------------->
+      <main>
 <!--HEADER------------------------------------->
         <header>
           <h1><strong>Morgane</strong> Proxy</h1>
           <h2><span class="purple-line">Dével</span>oppeuse Web / Graphiste / Rédactrice SEO</h2>
         </header>
-<!--MAIN--------------------------------------->
-        <main>
+<!--BLOCK ARTICLES / RESUME--------------------------------------->
+        <div class="resume">
 <!--Formation---------------------->
-          <div class="block-right">
+          <section class="block-right">
             <div class="block-title">
               <div class="icon-title"><i class="fas fa-graduation-cap"></i>
               </div>
@@ -69,7 +72,7 @@
             </div>
             <article>
               <div class="block-date">
-                <div class="puce-date"><i class="fas fa-circle"></i></div>
+                <div class="puce-date"><i class="far fa-dot-circle"></i></div>
                 <div class="date">
                   <p>2020 - Aujourd'hui<br>
                     Lille
@@ -85,7 +88,7 @@
             </article>
             <article>
               <div class="block-date">
-                <div class="puce-date"><i class="far fa-dot-circle"></i></div>
+                <div class="puce-date"><i class="fas fa-circle"></i></div>
                 <div class="date">
                   <p>2016 - 2017<br>
                     Lille
@@ -115,9 +118,9 @@
                 et marketing.</p>
               </div>
             </article>
-          </div>
+          </section>
 <!--Expérience professionnelle---------------------->
-          <div class="block-right">
+          <section class="block-right">
             <div class="block-title">
               <div class="icon-title"><i class="fas fa-briefcase"></i></div>
               <h3>Expérience professionnelle</h3>
@@ -170,9 +173,9 @@
                   relation presse et médias.</p>
               </div>
             </article>
-          </div>
+          </section>
 <!--Recommandation---------------------->
-          <div class="block-right">
+          <section class="block-right">
             <div class="block-title">
               <div class="icon-title"><i class="fas fa-pencil-alt"></i></div>
               <h3>Recommandations</h3>
@@ -193,10 +196,9 @@
                 </p>
               </div>
             </article>
-          </div><!--fermeture div reco-->
-<!--FIN TEXTE------------------------------------------------------------------>
-        </main>
-      </section>
+          </section><!--fermeture div reco-->
+        </resume>
+      </main>
     </div><!--fermeture block page-->
     <script src="https://kit.fontawesome.com/d10274cdab.js" crossorigin="anonymous"></script>
     <!--script pour interpréter Font Awesome à placer en fin de code dans le body-->

@@ -1,39 +1,26 @@
-{
-  border: 1px solid black;
-}
-/*-------------------------------------------------------------*/
-
-@media screen and (max-width: 1280px){
-/*Définir règles responsive!!!*/
-}
-
 body{
     font-family: verdana,sans-serif;
     margin: 0;
-    background-color: #424242;
-    background: url(img/desk_purple.jpg) fixed no-repeat ;
+    background-color: #E1BEE7;
     font-size: 14px;
 }
 
-#bloc_page{
+#bloc-page{
   display: flex;
   margin: auto;
   max-width: 1000px;
+  border:1px solid #9C27B0;
 }
 
 p{
   margin-top: 0;
 }
-/*BLOCK GAUCHE----------------------------------------------*/
+/*--BLOCK GAUCHE / ASIDE----------------------------------------------*/
 aside{
   background-color: #9C27B0;
   float: left;
   width: 30%;
   position: relative;
-}
-
-.block-left{
-  /*Coller contenu (titre) à la div ?*/
 }
 
 #block-loisirs{
@@ -99,16 +86,16 @@ a{
 a:hover{
   text-decoration: underline;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
-/*BLOCK DROIT----------------------------------------------*/
-section{
+/*--BLOCK DROIT / MAIN----------------------------------------------*/
+main{
   float: right;
-  width: 70%; /*Redéfinir la bonne dimension après effacement des bordures*/
+  width: 70%;
   background-color: white;
 }
-/*Header-------------------------------------*/
+/*--HEADER-------------------------------------*/
 header{
   margin-left: 50px;
   padding-bottom: 60px;
@@ -134,27 +121,27 @@ h2{
   font-weight: normal;
   margin-top:10px;
 }
-/*Main + Articles-------------------------------------*/
-main{
+/*--BLOCK ARTICLES / RESUME-------------------------------------*/
+.resume{
   padding-left: 50px;
-  padding-right: 50px;/*OK*/
+  padding-right: 50px;
 }
 
 .block-right{
   display: flex;
   flex-direction: column;
   padding-top: 0;
-  padding-bottom: 0;/*OK*/
+  padding-bottom: 0;
 }
 
 .block-title{
-    border-bottom: 2px solid #9C27B0;/*OK*/
+    border-bottom: 2px solid #9C27B0;
 }
 
 .icon-title{
   color:#9C27B0;
   float: left;
-  font-size: 150%;/*OK*/
+  font-size: 150%;
 }
 
 .block-right h3{
@@ -165,17 +152,17 @@ main{
   padding-left: 25px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 18px;/*OK*/
+  font-size: 18px;
 }
 
-/*Block date gauche---------*/
+/*Block puce et date (gauche)---------*/
 article{
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 15px;
   padding-left: 30px;
-  padding-right: 30px;/*choses à revoir ici, n'arrive pas à enlever l'espace*/
+  padding-right: 30px;
 }
 
 .block-date{
@@ -195,7 +182,7 @@ article{
   float: left;
   font-size: 70%;
 }
-/*Block texte droit---------*/
+/*Block texte (droite)---------*/
 .block-text{
   float: right;
   width: 70%;
@@ -222,3 +209,11 @@ h6{
   margin-bottom: 15px;
   font-size: 14px;
 }
+
+.block-reco{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*--RESPONSIVE DESIGN-------------------------------------*/
