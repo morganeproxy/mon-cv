@@ -1,39 +1,26 @@
-{
-  border: 1px solid black;
-}
-/*-------------------------------------------------------------*/
-
-@media screen and (max-width: 1280px){
-/*Définir règles responsive!!!*/
-}
-
 body{
     font-family: verdana,sans-serif;
-    margin: 0;
-    background-color: #424242;
-    background: url(img/desk_purple.jpg) fixed no-repeat ;
-    font-size: 14px;
+    background-color: #E1BEE7;
+    font-size: 0.9em;
+    margin: auto;
 }
 
-#bloc_page{
+#block-page{
   display: flex;
   margin: auto;
   max-width: 1000px;
+  border:1px solid #9C27B0;
 }
 
 p{
   margin-top: 0;
 }
-/*BLOCK GAUCHE----------------------------------------------*/
+/*--BLOCK GAUCHE / ASIDE----------------------------------------------*/
 aside{
-  background-color: #9C27B0;
-  float: left;
-  width: 30%;
+  /*float: left;*/
   position: relative;
-}
-
-.block-left{
-  /*Coller contenu (titre) à la div ?*/
+  width: 30%;
+  background-color: #9C27B0;
 }
 
 #block-loisirs{
@@ -45,12 +32,10 @@ right: 0;
 
 .icon-hobby{
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   justify-content: space-around;
-  align-items: center;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /*align-items: center;*/
+  margin:15px 15px 0 15px;
   }
 
   .element{
@@ -62,34 +47,33 @@ right: 0;
   }
 
 img{
+  display: block;
+  margin: auto;
   height: 150px;
   width: 150px;
   border-radius: 150px;
-  border-radius: 5px solid;
   border: 2px solid rgba(255, 255, 255, 0.5); /*transparence de la bordure*/
   box-shadow: 3px 3px 2px #7B1FA2;
-  display: block;
-  margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
  }
 
 aside h3{
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.5em;
+  color: #9C27B0;
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 3px 2px #7B1FA2;
   padding: 5px;
-  color: #9C27B0;
-  text-align: center;
 }
 
 aside p{
+  color: white;
   margin: 25px;
   text-align: justify;
-  color: white;
 }
 
 a{
@@ -97,18 +81,18 @@ a{
 }
 
 a:hover{
+  color: white;
   text-decoration: underline;
   font-weight: bold;
-  color: black;
 }
 
-/*BLOCK DROIT----------------------------------------------*/
-section{
-  float: right;
-  width: 70%; /*Redéfinir la bonne dimension après effacement des bordures*/
+/*--BLOCK DROIT / MAIN----------------------------------------------*/
+main{
+  /*float: right;*/
+  width: 70%;
   background-color: white;
 }
-/*Header-------------------------------------*/
+/*--HEADER-------------------------------------*/
 header{
   margin-left: 50px;
   padding-bottom: 60px;
@@ -134,56 +118,55 @@ h2{
   font-weight: normal;
   margin-top:10px;
 }
-/*Main + Articles-------------------------------------*/
-main{
+/*--BLOCK ARTICLES / RESUME-------------------------------------*/
+.resume{
   padding-left: 50px;
-  padding-right: 50px;/*OK*/
+  padding-right: 50px;
 }
 
 .block-right{
   display: flex;
   flex-direction: column;
-  padding-top: 0;
-  padding-bottom: 0;/*OK*/
+  /*padding-top: 0;
+  padding-bottom: 0;*/
 }
 
 .block-title{
-    border-bottom: 2px solid #9C27B0;/*OK*/
+    border-bottom: 2px solid #9C27B0;
 }
 
 .icon-title{
-  color:#9C27B0;
   float: left;
-  font-size: 150%;/*OK*/
+  font-size: 150%;
+  color:#9C27B0;
 }
 
 .block-right h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 25px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;/*OK*/
 }
 
-/*Block date gauche---------*/
+/*Block puce et date (gauche)---------*/
 article{
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;/*choses à revoir ici, n'arrive pas à enlever l'espace*/
+  margin: 20px 0 15px 0;
+  padding: 0 30px 0 30px;
 }
 
 .block-date{
   display: flex;
-  flex-direction: row;
-  margin: 0;
-  float: left;
   width: 30%;
+  /*flex-direction: row;
+  margin: 0;
+  float: left;*/
+  font-size: 0.8em;
 }
 
 .date{
@@ -192,33 +175,128 @@ article{
 
 .puce-date{
   color:#9C27B0;
-  float: left;
+  /*float: left;*/
   font-size: 70%;
 }
-/*Block texte droit---------*/
+/*Block texte (droite)---------*/
 .block-text{
-  float: right;
+  /*float: right;*/
   width: 70%;
+  padding-left: 20px;
 }
 
 h4{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 15px;
-    margin-top: 0;
+    font-size: 1em;
+    margin: 0 0 15px 0;
   }
 
 h5{
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  font-size: 0.9em;
+  margin: 0 0 10px 0;
 }
 /*Block Recommandation---------*/
 h6{
-  margin-top:0;
-  margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 0.9em;
+  margin: 0 0 15px 0;
 }
+
+/*.block-reco{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}*/
+
+/*--RESPONSIVE DESIGN-------------------------------------*/
+
+/*Grand écrans*/
+/*@media screen and (min-width: 1600px){
+  body{
+    max-width: 1200px;}
+  }*/
+
+/*Mobile et tablette*/
+@media screen and (max-width: 1024px){
+#block-page{
+  display: block;
+  width: auto;
+}
+img{
+  margin-bottom: 30px;
+}
+  aside{
+    width: 100%;
+    float: none;
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  #info p{
+    text-align: center;
+  }
+  #presentation{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main{
+    width: 100%;
+    float: none;
+  }
+#block-loisirs{
+  position:static;
+}
+.icon-hobby{
+  padding-bottom: 15px;
+}
+header{
+  margin: 0 20px 0 20px;
+  padding: 10px 20px 20px 20px;
+}
+h1{
+  font-size: 2.3em;
+  text-align: center;
+}
+h2{
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.block-title{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+article{
+  flex-direction: column;
+  text-align: center;
+}
+.block-text{
+  float: none;
+  width: 100%;
+  padding-left: 0;
+}
+h4, h5, h6{
+  text-align: center;
+}
+.block-right h3{
+  justify-content: center;
+  padding: 0;
+}
+.block-date{
+  flex-direction: column;
+  float: none;
+  width: 100%;
+}
+.block-date p{
+  color: #9C27B0;
+}
+.icon-title, .puce-date{
+  display: none;
+}
+.block-reco{
+  padding-bottom: 15px;
+}
+  }
