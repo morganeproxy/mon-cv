@@ -212,14 +212,8 @@ h6{
 
 /*--RESPONSIVE DESIGN-------------------------------------*/
 
-/*Grand écrans*/
-/*@media screen and (min-width: 1600px){
-  body{
-    max-width: 1200px;}
-  }*/
-
 /*Mobile et tablette*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 992px){
 #block-page{
   display: block;
   width: auto;
@@ -286,17 +280,22 @@ h4, h5, h6{
   padding: 0;
 }
 .block-date{
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   float: none;
   width: 100%;
 }
 .block-date p{
   color: #9C27B0;
 }
-.icon-title, .puce-date{
-  display: none;
-}
 .block-reco{
   padding-bottom: 15px;
 }
   }
+
+  /*Grand écran*/
+  @media screen and (min-width: 1200px){
+      #block-page{
+      max-width: 1000px;
+      justify-content: center;}
+    }
