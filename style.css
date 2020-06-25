@@ -17,7 +17,6 @@ p{
 }
 /*--BLOCK GAUCHE / ASIDE----------------------------------------------*/
 aside{
-  /*float: left;*/
   position: relative;
   width: 30%;
   background-color: #9C27B0;
@@ -32,9 +31,7 @@ right: 0;
 
 .icon-hobby{
   display: flex;
-  /*flex-direction: row;*/
   justify-content: space-around;
-  /*align-items: center;*/
   margin:15px 15px 0 15px;
   }
 
@@ -52,7 +49,7 @@ img{
   height: 150px;
   width: 150px;
   border-radius: 150px;
-  border: 2px solid rgba(255, 255, 255, 0.5); /*transparence de la bordure*/
+  border: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 3px 3px 2px #7B1FA2;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -88,7 +85,6 @@ a:hover{
 
 /*--BLOCK DROIT / MAIN----------------------------------------------*/
 main{
-  /*float: right;*/
   width: 70%;
   background-color: white;
 }
@@ -127,8 +123,6 @@ h2{
 .block-right{
   display: flex;
   flex-direction: column;
-  /*padding-top: 0;
-  padding-bottom: 0;*/
 }
 
 .block-title{
@@ -163,9 +157,6 @@ article{
 .block-date{
   display: flex;
   width: 30%;
-  /*flex-direction: row;
-  margin: 0;
-  float: left;*/
   font-size: 0.8em;
 }
 
@@ -175,12 +166,10 @@ article{
 
 .puce-date{
   color:#9C27B0;
-  /*float: left;*/
   font-size: 70%;
 }
 /*Block texte (droite)---------*/
 .block-text{
-  /*float: right;*/
   width: 70%;
   padding-left: 20px;
 }
@@ -203,12 +192,6 @@ h6{
   font-size: 0.9em;
   margin: 0 0 15px 0;
 }
-
-/*.block-reco{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}*/
 
 /*--RESPONSIVE DESIGN-------------------------------------*/
 
