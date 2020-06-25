@@ -1,11 +1,5 @@
 body{
-    font-family: verdana,sans-serif;
-    background-color: #E1BEE7;
-    font-size: 0.9em;
-    margin: auto;
-}
-
-#block-page{
+  font-family: verdana,sans-serif;
   display: flex;
   margin: auto;
   max-width: 1000px;
@@ -18,8 +12,6 @@ p{
 /*--BLOCK GAUCHE / ASIDE----------------------------------------------*/
 aside{
   position: relative;
-  width: 30%;
-  background-color: #9C27B0;
 }
 
 #block-loisirs{
@@ -132,7 +124,6 @@ h2{
 .icon-title{
   float: left;
   font-size: 150%;
-  color:#9C27B0;
 }
 
 .block-right h3{
@@ -150,8 +141,6 @@ h2{
 article{
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 15px 0;
-  padding: 0 30px 0 30px;
 }
 
 .block-date{
@@ -246,39 +235,3 @@ h2{
   text-align: center;
   margin-bottom: 15px;
 }
-article{
-  flex-direction: column;
-  text-align: center;
-}
-.block-text{
-  float: none;
-  width: 100%;
-  padding-left: 0;
-}
-h4, h5, h6{
-  text-align: center;
-}
-.block-right h3{
-  justify-content: center;
-  padding: 0;
-}
-.block-date{
-  flex-direction: row;
-  justify-content: center;
-  float: none;
-  width: 100%;
-}
-.block-date p{
-  color: #9C27B0;
-}
-.block-reco{
-  padding-bottom: 15px;
-}
-  }
-
-  /*Grand écran*/
-  @media screen and (min-width: 1200px){
-      #block-page{
-      max-width: 1000px;
-      justify-content: center;}
-    }
