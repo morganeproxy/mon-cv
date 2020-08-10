@@ -15,7 +15,7 @@ body{
 p{
   margin-top: 0;
 }
-/*--BLOCK GAUCHE / ASIDE----------------------------------------------*/
+/*--BLOCK GAUCHE / ASIDE*/
 aside{
   position: relative;
   width: 30%;
@@ -83,12 +83,12 @@ a:hover{
   font-weight: bold;
 }
 
-/*--BLOCK DROIT / MAIN----------------------------------------------*/
+/*--BLOCK DROIT / MAIN*/
 main{
   width: 70%;
   background-color: white;
 }
-/*--HEADER-------------------------------------*/
+/*--HEADER*/
 header{
   margin-left: 50px;
   padding-bottom: 60px;
@@ -114,7 +114,7 @@ h2{
   font-weight: normal;
   margin-top:10px;
 }
-/*--BLOCK ARTICLES / RESUME-------------------------------------*/
+/*--BLOCK ARTICLES / RESUME*/
 .resume{
   padding-left: 50px;
   padding-right: 50px;
@@ -146,7 +146,7 @@ h2{
   padding-left: 25px;
 }
 
-/*Block puce et date (gauche)---------*/
+/*Block puce et date (gauche)*/
 article{
   display: flex;
   justify-content: space-between;
@@ -168,7 +168,7 @@ article{
   color:#9C27B0;
   font-size: 70%;
 }
-/*Block texte (droite)---------*/
+/*Block texte (droite)*/
 .block-text{
   width: 70%;
   padding-left: 20px;
@@ -187,13 +187,13 @@ h5{
   font-size: 0.9em;
   margin: 0 0 10px 0;
 }
-/*Block Recommandation---------*/
+/*Block Recommandation*/
 h6{
   font-size: 0.9em;
   margin: 0 0 15px 0;
 }
 
-/*--RESPONSIVE DESIGN-------------------------------------*/
+/*--RESPONSIVE DESIGN*/
 
 /*Mobile et tablette*/
 @media screen and (max-width: 992px){
